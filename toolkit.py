@@ -4,7 +4,7 @@ from colorama import *
 colorama.init()
 init(autoreset=True)
 
-
+os.system("clear")
 print('\33[34m' + "")
 print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
 print('\33[34m' +"  (    )      /  \    / ) (___  ___)    /  \    / )  ) )  ( (  (_ \   / _)")
@@ -30,12 +30,12 @@ print("5. Remote Access")
 print("6. Information Gethering")
 print("7. Utility")
 scelta = int(input(">")) 
-if scelta == 1:                         #IFCONFIG
+if scelta == 1:                                 #IFCONFIG
     os.system("ifconfig")
     input("premi invio per continuare")
     os.system("clear")
     os.system("python3 toolkit.py")
-if scelta == 2:                                       #NMAP PORT SCAN
+if scelta == 2:                                #NMAP PORT SCAN
     host = input("\n inserisci l'host: ")
     os.system("nmap " + host)
     input("premi invio per continuare")
@@ -59,7 +59,7 @@ if scelta == 3:
     print('\33[33m ' + "-----------------------------created by antnux-------------------------------")     
     print("1. DDoS")
     print("2. DDoS Ripper")    
-                         #DDoS
+                                                    #DDoS
     scelta6 = int(input("> "))
     if scelta6 == 1:
         os.system("cd tools/DDoS && python2 ")
@@ -68,8 +68,8 @@ if scelta == 3:
 
     if scelta6 == 2:
         os.system("python2 tools/DDos-Attack/ddos-attack.py")
-        #os.system("clear")
-        #os.system("python3 toolkit.py ")
+        os.system("clear")
+        os.system("python3 toolkit.py ")
 if scelta == 4:                                   #BRUTEFORCE
     os.system("clear")
     print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
@@ -117,7 +117,7 @@ if scelta == 4:                                   #BRUTEFORCE
     if scelta2 == 4:
         os.system("python3 toolkit.py")
 
-if scelta == 5:                   #REMOTE ACCESS
+if scelta == 5:                               #REMOTE ACCESS
     print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
     print('\33[34m' +"  (    )      /  \    / ) (___  ___)    /  \    / )  ) )  ( (  (_ \   / _)")
     print('\33[34m' +"  / /\ \     / /\ \  / /      ) )      / /\ \  / /  ( (    ) )   \ \_/ /   ")
@@ -140,7 +140,9 @@ if scelta == 5:                   #REMOTE ACCESS
     print("4. Torna indietro")
     scelta3 = int(input())
     if scelta3 == 1:
+        os.system("clear")
         os.system("msfconsole")
+        os.system("python3 toolkit.py")
     if scelta3 == 2:
         LHOST = input("inserisci LHOST: ")
         LPORT = str(input("inserisci LPORT: "))
@@ -162,7 +164,7 @@ if scelta == 5:                   #REMOTE ACCESS
         os.system("clear")
         os.system("python3 toolkit.py")
 
-if scelta == 6:                       #INFORMATIOGATHERING
+if scelta == 6:                          #INFORMATIOGATHERING
     print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
     print('\33[34m' +"  (    )      /  \    / ) (___  ___)    /  \    / )  ) )  ( (  (_ \   / _)")
     print('\33[34m' +"  / /\ \     / /\ \  / /      ) )      / /\ \  / /  ( (    ) )   \ \_/ /   ")
@@ -189,9 +191,13 @@ if scelta == 6:                       #INFORMATIOGATHERING
        os.system("python3 toolkit.py")
     if scelta4 == 2:
         os.system("cd tools/IP-Track && bash IP-Track")
+        input("premi invio per continuare")
+        os.system("clear")
+        os.system("python3 toolkit.py")
+
     else:
        print("dio porco")
-
+                                #UTILITY
 if scelta == 7:
     print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
     print('\33[34m' +"  (    )      /  \    / ) (___  ___)    /  \    / )  ) )  ( (  (_ \   / _)")
@@ -217,4 +223,5 @@ if scelta == 7:
         testo5 = input("inserisci il testo: ")
         os.system("figlet "+  testo5)
         input("premi invio per continuare")
+        os.system("clear")
         os.system("python3 toolkit.py")
