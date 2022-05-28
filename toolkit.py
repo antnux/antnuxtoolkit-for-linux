@@ -164,7 +164,7 @@ if scelta == 5:                               #REMOTE ACCESS
         os.system("clear")
         os.system("python3 toolkit.py")
 
-if scelta == 6:                          #INFORMATIOGATHERING
+if scelta == 6:                                #INFORMATIOGATHERING
     print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
     print('\33[34m' +"  (    )      /  \    / ) (___  ___)    /  \    / )  ) )  ( (  (_ \   / _)")
     print('\33[34m' +"  / /\ \     / /\ \  / /      ) )      / /\ \  / /  ( (    ) )   \ \_/ /   ")
@@ -197,7 +197,7 @@ if scelta == 6:                          #INFORMATIOGATHERING
 
     else:
        print("dio porco")
-                                #UTILITY
+                                                    #UTILITY
 if scelta == 7:
     print('\33[34m' +"   ____        __      _   ________      __      _   __    __   __     __  ")
     print('\33[34m' +"  (    )      /  \    / ) (___  ___)    /  \    / )  ) )  ( (  (_ \   / _)")
@@ -225,3 +225,4 @@ if scelta == 7:
         input("premi invio per continuare")
         os.system("clear")
         os.system("python3 toolkit.py")
+
